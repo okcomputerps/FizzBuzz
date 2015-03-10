@@ -17,6 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+            
+   
+    for (int i = 1; i<=100; i++) {
+        if (i%15==0) {
+            NSLog(@"FizzBuzz");
+        } else if (i%3==0) {
+            NSLog(@"Fizz");
+        } else if (i%5==0) {
+            NSLog(@"Buzz");
+        } else {
+            NSLog(@"%i", i);
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
